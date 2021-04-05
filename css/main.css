@@ -615,4 +615,45 @@ h5 {
   position: relative;
   cursor: pointer;
 }
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+.footer {
+  background-color: #383838;
+  color: white;
+}
+
+.footer__title {
+  margin: 1rem 0rem;
+}
+
+.footer__logo {
+  height: 2rem;
+  filter: invert(93%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);
+}
+
+.footer__nav {
+  list-style-type: none;
+}
+
+.footer__option {
+  line-height: 2.5rem;
+}
+
+.footer__option--bold {
+  font-weight: 500;
+}
+
+.footer__option-icon {
+  width: 10px;
+  margin-right: 2rem;
+}
 /*# sourceMappingURL=main.css.map */
