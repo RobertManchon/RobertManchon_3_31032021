@@ -1,5 +1,9 @@
 .btn {
     border-radius: 100px;
+    /*font-family: "Roboto", sans-serif;*/
+    /*font-weight: normal;*/
+    /*font-size: 1.8rem;*/
+    margin: 0 auto;/**/
     height: 4.5rem;
     padding: 1rem 2rem;
     border: none;
@@ -20,5 +24,6 @@
     &--order {
         height: 5rem;
         padding: 1rem 7rem;
+        
     }
 }

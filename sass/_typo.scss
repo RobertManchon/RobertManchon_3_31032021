@@ -36,3 +36,16 @@ h5 {
     font-size: 1.4rem;
     font-weight: 500;
 }
+.btn{
+    font-family: $font-text;/**/
+    font-weight: normal;/**/
+    @media screen and (min-width: map-get($breakpoints, iphone)){
+        font-size: 1.6rem;/**/
+    }
+    @media screen and (min-width: map-get($breakpoints, desktop)){
+        font-size: 1.8rem;/**/
+    }
+    
+    
+    
+}
