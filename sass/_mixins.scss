@@ -20,3 +20,44 @@
 @mixin shadow-hover {
     box-shadow: 0 .8rem .8rem rgba(0,0,0, 0.2);
 }
+
+/*UR3 - Création de règles plus précises pour média queries */
+// Extra Small devices
+@mixin xm {
+    @media (min-width: #{$screen-xm-min}) {
+        @content;
+    }
+}
+// Small devices
+@mixin sm {
+    @media (min-width: #{$screen-sm-min}) {
+        @content;
+    }
+}
+
+ // Medium devices
+@mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+}
+
+ // Large devices
+@mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+}
+
+ // Extra large devices
+@mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+}
+// Custom devices
+@mixin rwd($screen) {
+    @media (min-width: $screen+'px' ) {
+        @content;
+    }
+}

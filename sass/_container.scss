@@ -1,19 +1,91 @@
-.container {
+.container_titlehowto{
+    display: flex;
+    flex-direction: raw;
+
+}
+.container_howto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100%;
     width: 100%;
-    padding: 4rem 2rem;
-    @media screen and (min-width: map-get($breakpoints, tablet)){
-        padding: 3rem;
-    }
-    @media screen and (min-width: map-get($breakpoints, desktop)){
-        padding: 4rem;
-    }
-    &--footer {
+    
+    // Window width >= 375px
+    @include xm {
+        padding: 1rem;
+        width: 90%;
+        justify-content: space-between;
+    }    
+    // Window width >= 576px
+    @include sm {
+        padding: 1rem;
+    }    
+    // Window width >= 768px
+    @include md {
         padding: 2rem;
-        @media screen and (min-width: map-get($breakpoints, tablet)){
-            padding: 3rem;
-        }
     }
+    // Window width >= 992px
+    @include lg {
+        padding: 3rem;
+    }        
+    // Window width >= 1200px
+    @include xl {
+        padding: 4rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }    
+}
+.container_titlerestaurants{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+.container_restaurants {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    
+    // Window width >= 375px
+    @include xm {
+        padding: 0.1rem;
+        @include flex-between;
+    }    
+    // Window width >= 576px
+    @include sm {
+        padding: 1rem;
+        
+    }    
+    // Window width >= 768px
+    @include md {
+        padding: 0rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    // Window width >= 992px
+    @include lg {
+        padding: 0rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }        
+    // Window width >= 1200px
+    @include xl {
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }    
+    
     &--menu {
         padding: 1rem 2rem;
         &-title {
@@ -23,4 +95,39 @@
             padding: 2rem 2rem 6rem 2rem;
         }
     };
+}
+.container_menuchoice{
+    display: inline-block;
+    justify-content: space-between;
+    max-width: 45rem;
+    padding:1rem;
+}
+
+.container_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    
+    // Window width >= 375px
+    @include xm {
+        padding: 0.1rem;
+    }    
+    // Window width >= 576px
+    @include sm {
+        padding: 1rem;
+    }    
+    // Window width >= 768px
+    @include md {
+        padding: 2rem;
+    }
+    // Window width >= 992px
+    @include lg {
+        padding: 3rem;
+    }        
+    // Window width >= 1200px
+    @include xl {
+        padding: 4rem;
+    }    
 }
