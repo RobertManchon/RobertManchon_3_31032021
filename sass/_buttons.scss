@@ -25,31 +25,30 @@
     }
     &--order {
         height: 5rem;
-        padding: 1rem 7rem;
-        @include lg {
-            padding: 1rem 5rem;
-        }
+        
         @include zm {
             font-size: 1.5rem;
+            padding: 1rem 2rem;
         }
-
         @include xm {
             font-size: 1.6rem;
+            padding: 1rem 3rem;
         } 
-        @include lg {
-            font-size: 1.8rem;
-        }        
         @include sm {
             font-size: 1.65rem;
+            padding: 1rem 4rem;
         }
         @include md {
             font-size: 1.7rem;
+            padding: 1rem 5rem;
         }
         @include lg {
-            font-size: 1.75rem;
-        }
-        @include xl {
             font-size: 1.8rem;
+            padding: 1rem 5rem;
+        }        
+        @include xl {
+            font-size: 1.85rem;
+            padding: 1rem 7rem;
         }
     }
 }

@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 /* color */
 /* font */
-/**/
-/*margins*/
 /*padding*/
 /* $appPadding: 2rem 0rem;*/
 /*media breakpoints*/
@@ -77,54 +75,47 @@
 
 .btn--order {
   height: 5rem;
-  padding: 1rem 7rem;
-}
-
-@media (min-width: 992px) {
-  .btn--order {
-    padding: 1rem 5rem;
-  }
 }
 
 @media (min-width: 360px) {
   .btn--order {
     font-size: 1.5rem;
+    padding: 1rem 2rem;
   }
 }
 
 @media (min-width: 375px) {
   .btn--order {
     font-size: 1.6rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .btn--order {
-    font-size: 1.8rem;
+    padding: 1rem 3rem;
   }
 }
 
 @media (min-width: 576px) {
   .btn--order {
     font-size: 1.65rem;
+    padding: 1rem 4rem;
   }
 }
 
 @media (min-width: 768px) {
   .btn--order {
     font-size: 1.7rem;
+    padding: 1rem 5rem;
   }
 }
 
 @media (min-width: 992px) {
   .btn--order {
-    font-size: 1.75rem;
+    font-size: 1.8rem;
+    padding: 1rem 5rem;
   }
 }
 
 @media (min-width: 1200px) {
   .btn--order {
-    font-size: 1.8rem;
+    font-size: 1.85rem;
+    padding: 1rem 7rem;
   }
 }
 
@@ -189,6 +180,13 @@
   opacity: 0;
 }
 
+@media (min-width: 992px) {
+  .loader {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+
 /* location section */
 .location {
   display: flex;
@@ -206,7 +204,8 @@
 /* Book the menu you like section*/
 .booking {
   background-color: #f7f7f7;
-  height: 30rem;
+  height: 15rem;
+  /* R17 */
   /*&__info { UR4*/
   display: flex;
   align-items: center;
@@ -496,7 +495,7 @@
   padding: 1rem 0;
 }
 
-@media screen and (min-width: 1280px) {
+@media (min-width: 1200px) {
   .menu__title {
     margin-top: -30rem;
   }
@@ -539,6 +538,7 @@
 @media (min-width: 992px) {
   .menu__choices {
     margin-top: -4rem;
+    /*R2*/
     z-index: auto;
   }
 }
@@ -614,6 +614,18 @@
   min-width: 0;
 }
 
+@media (min-width: 360px) {
+  .menu__choices-card-meal-info {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .menu__choices-card-meal-info {
+    font-size: 1rem;
+  }
+}
+
 @media (min-width: 768px) {
   .menu__choices-card-meal-info {
     padding: 1rem 2rem;
@@ -628,7 +640,6 @@
 
 @media (min-width: 1200px) {
   .menu__choices-card-meal-info {
-    /* Window width >=1200*/
     width: 100%;
     font-size: 1rem;
   }
@@ -636,13 +647,10 @@
 
 .menu__choices-card-meal-info-item {
   margin: .5rem 0;
-  width: 18rem;
-}
-
-@media screen and (min-width: 768px) {
-  .menu__choices-card-meal-info-item {
-    width: auto;
-  }
+  width: auto;
+  /* @include md {
+                            width: auto;
+                        } */
 }
 
 .menu__choices-card-meal-info-desc {
@@ -656,7 +664,6 @@
 }
 
 .menu__choices-card-meal-info-desc-text > p {
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -867,38 +874,45 @@
   padding: 2rem 2rem 6rem 2rem;
 }
 
-.container_menuchoice {
+.container__menuchoice {
   /* display: inline-block;
     justify-content: space-between; */
   padding: 1rem;
 }
 
+@media (min-width: 360px) {
+  .container__menuchoice {
+    margin: -1.3rem 1.4rem 2rem 1rem;
+  }
+}
+
 @media (min-width: 375px) {
-  .container_menuchoice {
+  .container__menuchoice {
     /*Window width >=576*/
     width: 80%;
-    margin: 3rem 1.4rem 2rem 1rem;
+    margin: -1.2rem 1.4rem 2rem 1rem;
   }
 }
 
 @media (min-width: 576px) {
-  .container_menuchoice {
+  .container__menuchoice {
     /*Window width >=576*/
     width: 80%;
-    margin: 3rem 1.4rem 2rem 1rem;
+    margin: -1.1rem 1.4rem 2rem 1rem;
   }
 }
 
 @media (min-width: 768px) {
-  .container_menuchoice {
+  .container__menuchoice {
     /* Window width >=768*/
     width: 80%;
-    margin: 3rem 1.4rem 2rem 1rem;
+    margin: -1rem 1.4rem 2rem 1rem;
+    /*R1 first value*/
   }
 }
 
 @media (min-width: 992px) {
-  .container_menuchoice {
+  .container__menuchoice {
     /*Window width >=992*/
     width: 80%;
     margin: 3rem 1.4rem 2rem 1rem;
@@ -906,7 +920,7 @@
 }
 
 @media (min-width: 1200px) {
-  .container_menuchoice {
+  .container__menuchoice {
     /* Window width >=1200*/
     display: inline-block;
     justify-content: space-between;
@@ -917,7 +931,7 @@
   }
 }
 
-.container_footer {
+.container__footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -926,42 +940,42 @@
 }
 
 @media (min-width: 360px) {
-  .container_footer {
+  .container__footer {
     padding: 0.1rem;
     background-color: yellow;
   }
 }
 
 @media (min-width: 375px) {
-  .container_footer {
+  .container__footer {
     padding: 0.1rem;
     background-color: blueviolet;
   }
 }
 
 @media (min-width: 576px) {
-  .container_footer {
+  .container__footer {
     padding: 1rem;
     background-color: green;
   }
 }
 
 @media (min-width: 768px) {
-  .container_footer {
+  .container__footer {
     padding: 2rem;
     background-color: aqua;
   }
 }
 
 @media (min-width: 992px) {
-  .container_footer {
+  .container__footer {
     padding: 3rem;
     background-color: royalblue;
   }
 }
 
 @media (min-width: 1200px) {
-  .container_footer {
+  .container__footer {
     padding: 4rem;
     background-color: red;
   }
@@ -1040,12 +1054,24 @@ h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   padding: 0.5rem;
-}
-
-@media (min-width: 360px) {
-  h3 {
-    font-size: 1.4rem;
-  }
+  /* @include zm {
+        font-size: 1rem;
+    }
+    @include xm {
+        font-size: 1.1rem
+    }
+    @include sm {
+        font-size: 1.2rem
+    }
+    @include md {
+        font-size: 1.3rem
+    }
+    @include lg {
+        font-size: 1.4rem;
+    }
+    @include xl {
+        font-size: 1.5 rem;
+    } */
 }
 
 h4 {

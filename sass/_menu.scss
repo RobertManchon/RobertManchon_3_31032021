@@ -26,9 +26,10 @@
         border-radius: 3.5rem 3.5rem 0 0;
         margin-top: -6rem;
         padding: 1rem 0;
-            @media screen and (min-width: map-get($breakpoints, desktop)){
-                margin-top: -30rem;
-            }
+        @include xl {
+            margin-top: -30rem;
+        }    
+        
         &-icon {
             color: white;
             margin: 0 2rem;
@@ -58,7 +59,7 @@
             z-index:auto;
         }
         @include lg {
-            margin-top: -4rem;
+            margin-top: -4rem; /*R2*/
             z-index:auto;
         }    
         &-title {
@@ -105,6 +106,12 @@
                 backface-visibility: hidden;
                 &-info {
                     padding: 1rem;
+                    @include zm {
+                        font-size: 0.9rem;
+                    }
+                    @include sm {
+                        font-size: 1rem;
+                    }
                     @include md {
                         padding: 1rem 2rem;
                     }
@@ -112,18 +119,19 @@
                         padding: 1.5rem 2rem;
                     }
 
-                    @include xl {    /* Window width >=1200*/
+                    @include xl {    
                         width: 100%;
                         font-size: 1rem;
-                    }    
+                    }   
+                    
                     width: 100%;
                     min-width: 0;
                     &-item {
                         margin: .5rem 0;
-                        width: 18rem;
-                        @media screen and (min-width: map-get($breakpoints, tablet)) {
+                        width: auto; //18rem;
+                        /* @include md {
                             width: auto;
-                        }
+                        } */
                     }
                     &-desc {
                         @include flex-between;
@@ -131,7 +139,7 @@
                             min-width: 0;
                         }
                         &-text > p {
-                            white-space: nowrap;
+                            //white-space: nowrap; R17
                             overflow: hidden;
                             text-overflow: ellipsis;
                             
@@ -153,7 +161,7 @@
                     overflow: hidden;
                     background-color: $color-tertiary;
                     color: $color-white;
-                    border-radius: $card-radius--right;
+                    border-radius: 0px 20px 20px 0px;
                     position: relative;
                     display: block;
                         i {

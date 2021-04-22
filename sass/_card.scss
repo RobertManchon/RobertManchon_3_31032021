@@ -1,6 +1,6 @@
 .card {
     @include shadow;
-    border-radius: $card-radius;
+    border-radius: 20px;
     position: relative;
     cursor: pointer;
 }

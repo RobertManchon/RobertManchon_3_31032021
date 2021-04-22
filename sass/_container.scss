@@ -121,25 +121,28 @@
         }
     };
 }
-.container_menuchoice{
+.container__menuchoice{
     /* display: inline-block;
     justify-content: space-between; */
     
     padding:1rem;
+    @include zm {
+        margin: -1.3rem 1.4rem 2rem 1rem;
+    }
     @include xm { /*Window width >=576*/
         width: 80%;
-        margin: 3rem 1.4rem 2rem 1rem;
+        margin: -1.2rem 1.4rem 2rem 1rem;
         //max-width: 1000px;
     } 
 
     @include sm {    /*Window width >=576*/
         width: 80%;
-        margin: 3rem 1.4rem 2rem 1rem;
+        margin: -1.1rem 1.4rem 2rem 1rem;
         //max-width: 1000px;
     }    
     @include md {    /* Window width >=768*/
         width: 80%;
-        margin: 3rem 1.4rem 2rem 1rem;
+        margin: -1rem 1.4rem 2rem 1rem;/*R1 first value*/
         //max-width: 1000px;
     }    
     @include lg {    /*Window width >=992*/
@@ -159,7 +162,7 @@
     }
 }
 
-.container_footer {
+.container__footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
