@@ -4,20 +4,21 @@
     animation: fade-in 2700ms ease-in;
 }
 
-.loader {
+.loader {/* R7 */
     position: absolute;
     z-index: 1001;
     left: 50%;
     border: 16px solid $color-secondary;
     border-top: 16px solid $color-primary;
     border-radius: 50%;
-    width: 10rem;/*UR1-LOADER passé de 20 à 10*/
-    height: 10rem;/*UR1-LOADER passé de 20 à 10*/
+    width: 10rem;
+    height: 10rem;
     animation: spin 1100ms linear;
     opacity: 0;
-    @media screen and (min-width: map-get($breakpoints, large-tablet)){
-        width: 20rem;/*UR1-LOADER passé de 30 à 20*/
-        height: 20rem;/*UR1-LOADER passé de 30 à 20*/
+    
+    @include lg {
+        width: 20rem;
+        height: 20rem;
     }
 }
 
@@ -41,10 +42,9 @@
     /*&__info { UR4*/
     @include flex-between;
     flex-direction: column;
-    height: 100%;
+    //height: 100%;
     text-align: center;
     padding: $booking-padding;
-    //}/*UR4*/
 }
 
 /* How it works section */
@@ -54,25 +54,28 @@
             // margin: 2rem 0rem 2rem 1rem;
             height: 6rem;
             background-color: $color-gray--light;
+            @include zm {
+                margin: 1rem 1.4rem 0.55rem 0.5rem; /* R16 last value*/
+            }
             
-            @include xm { /*Window width >=576*/
-                width: 80%;
-                margin: 3rem 1.4rem 2rem 1rem;
+            @include xm { /*Window width >=375 */
+                width: 80%;/* R8 */
+                margin: 0.8rem 1.4rem 2rem 1rem;
                 max-width: 1000px;
             } 
 
             @include sm {    /*Window width >=576*/
-                width: 80%;
-                margin: 3rem 1.4rem 2rem 1rem;
+                width: 60%;
+                margin: 1rem 1.4rem 2rem 1rem;/* R9 - first value*/
                 max-width: 1000px;
             }    
             @include md {    /* Window width >=768*/
-                width: 80%;
-                margin: 3rem 1.4rem 2rem 1rem;
+                width: 65%;
+                margin: 3rem 1.4rem 0rem 1rem;
                 max-width: 1000px;
             }    
             @include lg {    /*Window width >=992*/
-                width: 80%;
+                width: 45%;
                 margin: 3rem 1.4rem 2rem 1rem;
                 max-width: 1000px;
             }
@@ -88,10 +91,9 @@
         }
         &-title {
             display: flex;
-            align-items: center ;/* UR5 center*/
+            align-items: center ;
             justify-content: flex-start;
             height: 100%;
-            // margin: $title-margin;
         }
         &-number {
             background-color: $color-primary;
@@ -122,34 +124,41 @@
 .restaurant {
     background-color: $color-gray--light;
     &__card {
-        height: 18rem;/*20*/
+        height: 18rem;
         width: 100%;
-        max-width: 27rem;/*35*/
-        margin: 2rem 0rem;
+        max-width: 27rem;
+        
+        @include zm {
+            margin: 2.2rem;/*R4*/
+            width: 100%; /*R12*/
+            height: 14rem;
+        }
+        @include xm {
+            margin: 2.2rem;
+        }
         @include sm {    /*Window width >=576*/
-            margin: 1.2rem;
+            margin: 2.2rem;
             width: 45%;
         } 
-        @include md {    /* Window width >=768*/
-            margin: 1.2rem;
+        @include md {    /* Window width >=768*/ 
+            margin: 2.2rem;
             width: 45%;
         }   
         @include lg {    /*Window width >=992*/
             height: 25rem;
             margin: 1.4rem;
+            
         } 
         @include xl {    /* Window width >=1200*/
             margin: 2rem;
         } 
-
-
 
         &-image {
             height: 100%;
             width: 100%;
             border-radius: $card-radius;
         }
-        &-new {
+        &-new { 
             height: 3rem;
             width: 8rem;
             background-color: $color-tertiary;
@@ -161,7 +170,17 @@
             margin: auto;
             border-radius: 5px;
             @include flex-center;
-            @media screen and (min-width: map-get($breakpoints, large-tablet)){
+            
+            @include zm {
+                    left:50%;
+            }
+            @include sm {
+                left:54%; /*R6*/
+            }
+            @include md {
+                left: 55%;
+            }
+            @include lg {
                 height: 3.5rem;
                 width: 9rem;
             }
@@ -175,10 +194,11 @@
             position: absolute;
             top: 75%;
             left: 0;
-            padding: 1rem 0; /*$label-padding;*/
-            @media screen and (min-width: map-get($breakpoints, large-tablet)){
+            padding: 1rem 0;
+            @include lg {
                 height: 6.5rem;
             }
+
         }
         &-icon {
             color: white;

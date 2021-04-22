@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
-@import "./variables";
-@import "./typo";
-@import "./mixins";
-@import "./header";
-@import "./buttons";
-@import "./animations";
-@import "./homepage";
-@import "./menu";
-@import "./container";
-@import "./card";
-@import "./links";
-@import "./footer";
+@import 'variables';
+@import 'mixins';
+
+@import 'header';
+@import 'buttons';
+@import 'animations';
+@import 'homepage';
+@import 'menu';
+@import 'container';
+@import 'card';
+@import 'links';
+@import 'footer';
+@import 'typo';
 
 
 

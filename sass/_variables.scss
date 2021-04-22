@@ -32,7 +32,8 @@ $breakpoints: (
     desktop: 1280px
 );
 
-/*UR3 - Création de règles plus précises pour média queries */
+/*petits smartphones*/
+$screen-zm-min: 360px;
 
 /* smartphones */
 $screen-xm-min: 375px;

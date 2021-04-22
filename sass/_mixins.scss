@@ -21,7 +21,14 @@
     box-shadow: 0 .8rem .8rem rgba(0,0,0, 0.2);
 }
 
-/*UR3 - Création de règles plus précises pour média queries */
+// Very small screens
+
+@mixin zm {
+    @media (min-width: #{$screen-zm-min}) {
+        @content;
+    }
+}
+
 // Extra Small devices
 @mixin xm {
     @media (min-width: #{$screen-xm-min}) {
@@ -37,7 +44,7 @@
 
  // Medium devices
 @mixin md {
-    @media (min-width: #{$screen-md-min}) {
+    @media (min-width: #{$screen-md-min})  {
         @content;
     }
 }
@@ -55,9 +62,9 @@
         @content;
     }
 }
-// Custom devices
+/*// Custom devices
 @mixin rwd($screen) {
     @media (min-width: $screen+'px' ) {
         @content;
     }
-}
+}*/

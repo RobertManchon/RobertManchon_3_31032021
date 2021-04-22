@@ -1,11 +1,13 @@
 .footer {
+    
     background-color: darken($color-gray--dark, 70%);
     color: white;
     &__title {
-        margin: $title-margin;
+        margin: 1rem 0;
     }
     &__logo {
         height: 2rem;
+        padding-left: 0.5rem;
         filter: invert(93%) sepia(100%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);
     }
     &__nav {
