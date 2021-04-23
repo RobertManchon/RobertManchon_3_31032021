@@ -39,10 +39,27 @@
 .booking {
     background-color: $color-gray--light;
     height: 15rem;/* R17 */
-    /*&__info { UR4*/
+    @include zm {
+        height: 22rem;
+    }
+    @include xm {
+        height: 22rem;
+    }
+    @include sm {
+        height: 18rem;
+    }
+    @include md {
+        height: 15rem;
+    }
+    @include lg {
+        height: 15rem;
+    }
+    @include xl {
+        height: 22rem;
+    }
+
     @include flex-between;
     flex-direction: column;
-    //height: 100%;
     text-align: center;
     padding: $booking-padding;
 }
@@ -59,7 +76,7 @@
             }
             
             @include xm { /*Window width >=375 */
-                width: 80%;/* R8 */
+                width: 90%;/* R8 */
                 margin: 0.8rem 1.4rem 2rem 1rem;
                 max-width: 1000px;
             } 
@@ -129,20 +146,20 @@
         max-width: 27rem;
         
         @include zm {
-            margin: 2.2rem;/*R4*/
-            width: 100%; /*R12*/
-            height: 14rem;
+            margin: 0.6rem;/* R4 */
+            width: 90%; /* R12 */
+            height: 12rem;
         }
         @include xm {
             margin: 2.2rem;
         }
         @include sm {    /*Window width >=576*/
             margin: 2.2rem;
-            width: 45%;
+            width: 60%;
         } 
         @include md {    /* Window width >=768*/ 
             margin: 2.2rem;
-            width: 45%;
+            width: 70%;
         }   
         @include lg {    /*Window width >=992*/
             height: 25rem;

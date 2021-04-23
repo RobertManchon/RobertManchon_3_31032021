@@ -206,13 +206,48 @@
   background-color: #f7f7f7;
   height: 15rem;
   /* R17 */
-  /*&__info { UR4*/
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
   text-align: center;
   padding: 2rem 0rem;
+}
+
+@media (min-width: 360px) {
+  .booking {
+    height: 22rem;
+  }
+}
+
+@media (min-width: 375px) {
+  .booking {
+    height: 22rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .booking {
+    height: 18rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .booking {
+    height: 15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .booking {
+    height: 15rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .booking {
+    height: 22rem;
+  }
 }
 
 /* How it works section */
@@ -231,7 +266,7 @@
 @media (min-width: 375px) {
   .howto__card {
     /*Window width >=375 */
-    width: 80%;
+    width: 90%;
     /* R8 */
     margin: 0.8rem 1.4rem 2rem 1rem;
     max-width: 1000px;
@@ -323,11 +358,11 @@
 
 @media (min-width: 360px) {
   .restaurant__card {
-    margin: 2.2rem;
-    /*R4*/
-    width: 100%;
-    /*R12*/
-    height: 14rem;
+    margin: 0.6rem;
+    /* R4 */
+    width: 90%;
+    /* R12 */
+    height: 12rem;
   }
 }
 
@@ -341,7 +376,7 @@
   .restaurant__card {
     /*Window width >=576*/
     margin: 2.2rem;
-    width: 45%;
+    width: 60%;
   }
 }
 
@@ -349,7 +384,7 @@
   .restaurant__card {
     /* Window width >=768*/
     margin: 2.2rem;
-    width: 45%;
+    width: 70%;
   }
 }
 
@@ -793,10 +828,6 @@
 
 .container_restaurants {
   display: flex;
-  /* flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    width: 100%; */
 }
 
 @media (min-width: 360px) {
@@ -847,6 +878,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    padding: -1rem 0 1rem 0;
   }
 }
 
@@ -875,8 +907,6 @@
 }
 
 .container__menuchoice {
-  /* display: inline-block;
-    justify-content: space-between; */
   padding: 1rem;
 }
 

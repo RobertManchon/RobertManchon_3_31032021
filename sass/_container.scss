@@ -55,10 +55,6 @@
 
 .container_restaurants {
     display: flex;
-    /* flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    width: 100%; */
     
     @include zm { /* R11 */
         display: flex;
@@ -91,8 +87,8 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        
-    
+
+
     }
     // Window width >= 992px
     @include lg {
@@ -101,6 +97,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        padding: -1rem 0 1rem 0;
     }        
     // Window width >= 1200px
     @include xl {
@@ -122,8 +119,6 @@
     };
 }
 .container__menuchoice{
-    /* display: inline-block;
-    justify-content: space-between; */
     
     padding:1rem;
     @include zm {
