@@ -8,8 +8,7 @@
     position: absolute;
     z-index: 1001;
     left: 50%;
-    border: 16px solid $color-secondary;
-    border-top: 16px solid $color-primary;
+    border: 16px solid;
     border-radius: 50%;
     width: 10rem;
     height: 10rem;
@@ -38,7 +37,10 @@
 
 .booking {
     background-color: $color-gray--light;
-    height: 15rem;/* R17 */
+    //height: 15rem;/* R18 */
+    @inckude zz {
+        height: 19rem ;
+    }
     @include zm {
         height: 22rem;
     }
@@ -71,24 +73,27 @@
             // margin: 2rem 0rem 2rem 1rem;
             height: 6rem;
             background-color: $color-gray--light;
+            @iclude zz {
+                margin: 1rem 1.4rem 0.55rem 0.5rem;
+            }
             @include zm {
                 margin: 1rem 1.4rem 0.55rem 0.5rem; /* R16 last value*/
             }
             
             @include xm { /*Window width >=375 */
                 width: 90%;/* R8 */
-                margin: 0.8rem 1.4rem 2rem 1rem;
+                margin: 0.8rem 1.4rem 2rem 2rem;
                 max-width: 1000px;
             } 
 
             @include sm {    /*Window width >=576*/
                 width: 60%;
-                margin: 1rem 1.4rem 2rem 1rem;/* R9 - first value*/
+                margin: 1rem 1.4rem 2rem 2.2rem;/* R9 - first value*/
                 max-width: 1000px;
             }    
             @include md {    /* Window width >=768*/
                 width: 65%;
-                margin: 3rem 1.4rem 0rem 1rem;
+                margin: 3rem 1.4rem 0rem 8rem;
                 max-width: 1000px;
             }    
             @include lg {    /*Window width >=992*/
@@ -146,24 +151,24 @@
         max-width: 27rem;
         
         @include zm {
-            margin: 0.6rem;/* R4 */
-            width: 90%; /* R12 */
+            margin: 0.6rem;/* R 4 */
+            width: 90%; /* R 12 */
             height: 12rem;
         }
         @include xm {
-            margin: 2.2rem;
+            margin: 3.2rem;
         }
         @include sm {    /*Window width >=576*/
-            margin: 2.2rem;
-            width: 60%;
+            margin: 2.8rem;
+            width: 55%;
         } 
         @include md {    /* Window width >=768*/ 
-            margin: 2.2rem;
+            margin: 3.2rem;
             width: 70%;
         }   
         @include lg {    /*Window width >=992*/
             height: 25rem;
-            margin: 1.4rem;
+            margin: 2.4rem;
             
         } 
         @include xl {    /* Window width >=1200*/
