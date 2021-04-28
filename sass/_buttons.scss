@@ -4,7 +4,7 @@
     height: 4.5rem;
     padding: 1rem 2rem;
     border: none;
-    @include shadow;
+    @extend  %shadow;
     transition: all 500ms;
     outline: none;
     cursor: pointer;
@@ -17,7 +17,7 @@
         font-size: 1.2rem;
     }
     &:hover {
-        @include shadow-hover;
+        @extend %shadow-hover;
     }
     &--gradient { /* R15 */
         color:$color-white;

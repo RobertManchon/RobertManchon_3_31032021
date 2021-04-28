@@ -110,7 +110,7 @@
     &--menu {
         padding: 1rem 2rem;
         &-title {
-        @include flex-between;
+        @extend %flex-between;
         }
         &-order {
             padding: 2rem 2rem 6rem 2rem;

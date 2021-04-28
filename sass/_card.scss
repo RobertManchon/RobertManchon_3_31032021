@@ -1,5 +1,5 @@
 .card {
-    @include shadow;
+    @extend %shadow;
     border-radius: 20px;
     position: relative;
     cursor: pointer;

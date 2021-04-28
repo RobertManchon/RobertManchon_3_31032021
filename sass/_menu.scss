@@ -134,7 +134,7 @@
                         } */
                     }
                     &-desc {
-                        @include flex-between;
+                        @extend %flex-between;
                         &-text {
                             min-width: 0;
                         }
@@ -190,7 +190,7 @@
     }
     /* Order */
     &__order {
-        @include flex-center;
+        @extend %flex-center;
         padding: 0 0 2rem 0;
     }
 }

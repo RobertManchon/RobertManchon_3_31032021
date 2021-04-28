@@ -1,11 +1,11 @@
 .header {
-    @include flex-center;
+    @extend %flex-center;
     background: $color-white;
     height: 7rem;
     width: 100%; 
     position: relative;
     z-index: 1;
-    @include header-shadow;  
+    @extend %header-shadow;
     &__logo {
         height: 2.5rem;
     }
