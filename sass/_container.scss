@@ -120,24 +120,27 @@
     };
 }
 .container__menuchoice{
-    padding:1rem;
+    /*position: absolute;
+    top: 250px;
+    z-index: auto;
+    padding:1rem;*/
     @include zm {
-        margin: -1.3rem 1.4rem 2rem 1rem;
+        margin: 1rem 1.4rem 2rem 1rem; /* -1.3*/
     }
     @include xm { /*Window width >=576*/
         width: 80%;
-        margin: -1.2rem 1.4rem 2rem 1rem;
+        margin: 1rem 1.4rem 2rem 1rem; /*-1.2*/
         //max-width: 1000px;
     } 
 
     @include sm {    /*Window width >=576*/
         width: 80%;
-        margin: -1.1rem 1.4rem 2rem 1rem;
+        margin:  1rem 1.4rem 2rem 1rem; /*-1.1*/
         //max-width: 1000px;
     }    
     @include md {    /* Window width >=768*/
         width: 80%;
-        margin: -1rem 1.4rem 2rem 1rem;/*R1 first value TODO à modifier*/
+        margin: 1rem 1.4rem 2rem 1rem;/*R1 first value  -1 TODO à modifier*/
         //max-width: 1000px;
     }    
     @include lg {    /*Window width >=992*/

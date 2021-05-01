@@ -31,6 +31,10 @@
         }    
         
         &-icon {
+            width:40px;
+            position: absolute;
+            top: 85px;
+            right: -35px;
             color: white;
             margin: 0 2rem;
             font-size: 2rem;
@@ -41,7 +45,7 @@
             &:hover {
                 -webkit-text-stroke: 1px transparent;
                 background: linear-gradient(to bottom right, $color-secondary, $color-primary);
-                background-clip: text;
+                //background-clip: text;
                 -webkit-background-clip: text; /* TODO A remplacer problème de compatibilité*/
                 color: transparent;
             }

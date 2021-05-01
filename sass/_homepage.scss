@@ -251,7 +251,7 @@
             &:hover {
                 -webkit-text-stroke: 1px transparent;
                 background: linear-gradient(to bottom right, $color-secondary, $color-primary);
-                background-clip: text;
+                // background-clip: text;
                 -webkit-background-clip: text; /* TODO problème de compatibilité*/
                 color: transparent;
             }
