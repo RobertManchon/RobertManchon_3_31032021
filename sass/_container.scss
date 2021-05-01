@@ -48,9 +48,11 @@
     }    
 }
 .container_titlerestaurants{
-    display: flex;
-    flex-direction: row;
-    margin-left: 2rem;
+   display: flex;
+   flex-direction: row;
+    //margin-left: 2rem;
+    align-items: flex-start;
+
 }
 
 .container_restaurants {
@@ -135,7 +137,7 @@
     }    
     @include md {    /* Window width >=768*/
         width: 80%;
-        margin: -1rem 1.4rem 2rem 1rem;/*R1 first value*/
+        margin: -1rem 1.4rem 2rem 1rem;/*R1 first value TODO à modifier*/
         //max-width: 1000px;
     }    
     @include lg {    /*Window width >=992*/
@@ -165,33 +167,45 @@
     // Window width >= 360px
     @include zm {
         padding: 0.1rem;
-        background-color:yellow
+        @if($endev) {
+            background-color: yellow
+        }
     }    
 
     // Window width >= 375px
     @include xm {
         padding: 0.1rem;
-        background-color:blueviolet; 
+        @if($endev) {
+            background-color: blueviolet;
+        }
     }   
     
     // Window width >= 576px
     @include sm {
         padding: 1rem;
-        background-color:green;
+        @if($endev) {
+            background-color: green;
+        }
     }   
     // Window width >= 768px
     @include md {
         padding: 2rem;
-        background-color: aqua;
+        @if($endev) {
+            background-color: aqua;
+        }
     }
     // Window width >= 992px
     @include lg {
         padding: 3rem;
-        background-color: royalblue;
+        @if($endev) {
+            background-color: royalblue;
+        }
     }        
     // Window width >= 1200px
     @include xl {
         padding: 4rem;
-        background-color: red;
+        @if($endev) {
+            background-color: red;
+        }
     }    
 }

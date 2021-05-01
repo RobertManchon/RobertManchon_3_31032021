@@ -17,14 +17,68 @@ h1 {
 h2 {
     font-family: $font-text;
     font-weight: 700;
+    @include zz {
+        font-size: 1rem;
+    }
+    @include zm {
+        font-size: 1.2rem;
+    }
+    @include xm {
+        font-size: 1.3rem
+    }
+    @include sm {
+        font-size: 1.2rem
+    }
+    @include md {
+        font-size: 1.3rem
+    }
+    @include lg {
+        font-size: 1.4rem;
+    }
+
+    @include xl {
+        font-size: 1.5rem;
+    }
 }
 
 h3 {
     font-family: $font-text;
     font-weight: 900;
     padding: 0.5rem;
-    //TODO on fait quoi de ça . Etude en cours?
-    /* @include zm {
+
+    @include zz {
+        font-size: 1rem;
+    }
+    @include zm {
+        font-size: 1rem;
+    }
+    @include xm {
+        font-size: 1.1rem
+    }
+    @include sm {
+        font-size: 1.2rem
+    }
+    @include md {
+        font-size: 1.3rem
+    }
+    @include lg {
+        font-size: 1.4rem;
+    }
+
+    @include xl {
+        font-size: 1.5rem;
+    }
+}
+
+h4 {
+    font-family: $font-text;
+    font-weight: 100;
+    padding: 0.5rem;
+
+    @include zz {
+        font-size: 0.8rem;
+    }
+    @include zm {
         font-size: 1rem;
     }
     @include xm {
@@ -40,26 +94,25 @@ h3 {
         font-size: 1.4rem;
     }
     @include xl {
-        font-size: 1.5 rem;
-    } */
-}
+        font-size: 1.5rem;
+    }
 
-h4 {
-    font-family: $font-text;
-    font-weight: 100;
-    padding: 0.5rem;
 }
 
 /* menu section titles */
 
 h5 {
     font-family: $font-text;
-    font-size: 1.4rem;
+    //font-size: 1.4rem;
+
+    @include zz {
+        font-size:  0.8rem;
+    }
     @include zm {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
     @include xm {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
     }
     @include sm {
         font-size: 1.4rem;

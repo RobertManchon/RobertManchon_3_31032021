@@ -22,6 +22,7 @@
     }
 }
 
+
 /* location section */
 
 .location {
@@ -39,17 +40,18 @@
 .booking {
     background-color: $color-gray--light;
     //height: 15rem;/* R18 */
+
     @include zz {
-        height: 19rem ;
+        height: 14rem ;
     }
     @include zm {
-        height: 22rem;
+        height: 14rem;
     }
     @include xm {
-        height: 22rem;
+        height: 14rem;
     }
     @include sm {
-        height: 18rem;
+        height: 14rem;
     }
     @include md {
         height: 15rem;
@@ -71,38 +73,47 @@
 
 .howto {
     &__card {
-        height: 6rem;
+
         background-color: $color-gray--light;
         @include zz {
-            margin: 1rem 1.4rem 0.55rem 0.5rem;
+            margin: 1rem 1.4rem 0.55rem 1rem;  /* R16 last value*/
+            height: 4rem; /*  R19 */
+            width: 85%;
         }
         @include zm {
-            margin: 1rem 1.4rem 0.55rem 0.5rem; /* R16 last value*/
+            margin: 1rem 1.4rem 0.55rem 1rem;
+            height: 4rem;
+            width: 100%;
         }
         @include xm { /*Window width >=375 */
-            width: 90%;/* R8 */
-            margin: 0.8rem 1.4rem 2rem 2rem;
-            max-width: 1000px;
+            width: 100%;/* R8 */
+            margin: 0.8rem 1.4rem 2rem 2.1rem;
+            height: 4rem;
+           // max-width: 500px;
         }
 
         @include sm {    /*Window width >=576*/
-            width: 60%;
+            width: 80%;
             margin: 1rem 1.4rem 2rem 2.2rem;/* R9 - first value*/
+            height: 4rem;
             max-width: 1000px;
         }
         @include md {    /* Window width >=768*/
             width: 65%;
             margin: 3rem 1.4rem 0rem 8rem;
+            height: 6rem;
             max-width: 1000px;
         }
         @include lg {    /*Window width >=992*/
             width: 45%;
             margin: 3rem 1.4rem 2rem 1rem;
+            height: 6rem;
             max-width: 1000px;
         }
         @include xl {    /* Window width >=1200*/
             width: 80%;
             margin: 3rem 1.4rem 2rem 1rem;
+            height: 6rem;
             max-width: 1000px;
         }
 
@@ -147,10 +158,14 @@
         height: 18rem;
         width: 100%;
         max-width: 27rem;
-        
+        @include zz {
+           margin-bottom: 6rem; /* R4 */
+           width: 90%;  /* R12 */
+           height: 12rem;
+         }
         @include zm {
-            margin: 0.6rem;/* R4 */
-            width: 90%; /* R12 */
+            margin-bottom: 6rem;
+            width: 90%;
             height: 12rem;
         }
         @include xm {
@@ -179,30 +194,35 @@
             border-radius: 20px;
         }
         &-new { 
-            height: 3rem;
-            width: 8rem;
+
             background-color: $color-tertiary;
             color: darken($color-tertiary, 40%);
             font-weight: 700;
             position: absolute;
-            top: 2rem;
-            left: 65%;
-            margin: auto;
+             margin: auto;
             border-radius: 5px;
             @extend %flex-center;
-            
+            /*R6 position of the new button */
+            @include zz {
+                @include position_btn_new(2rem,7rem,2rem,50%,1rem);
+            }
             @include zm {
-                left:50%;
+                @include position_btn_new(3rem,8rem,2rem,50%,1.4rem);
+            }
+            @include xm{
+                @include position_btn_new(3rem,8rem,2rem,50%,1.4rem);
             }
             @include sm {
-                left: 54%; /*R6*/
+                @include position_btn_new(3rem,8rem,2rem,54%,1.4rem);
             }
             @include md {
-                left: 55%;
+                @include position_btn_new(3rem,8rem,2rem,55%,1.4rem);
             }
             @include lg {
-                height: 3.5rem;
-                width: 9rem;
+                @include position_btn_new(3.5rem,9rem,2rem,55%,1.4rem);
+            }
+            @include xl {
+                @include position_btn_new(3.5rem,9rem,2rem,55%,1.4rem);
             }
         }
         &-label {
@@ -232,7 +252,7 @@
                 -webkit-text-stroke: 1px transparent;
                 background: linear-gradient(to bottom right, $color-secondary, $color-primary);
                 background-clip: text;
-                -webkit-background-clip: text;
+                -webkit-background-clip: text; /* TODO problème de compatibilité*/
                 color: transparent;
             }
         }

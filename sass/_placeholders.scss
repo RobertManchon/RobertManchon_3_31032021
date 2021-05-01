@@ -9,6 +9,12 @@
   align-items: center;
   justify-content: space-between;
 }
+%flex-row-center {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 %header-shadow {
   box-shadow: 0px 0px 6px #888888;
 }

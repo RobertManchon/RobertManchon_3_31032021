@@ -49,3 +49,10 @@
         @content;
     }
 }*/
+@mixin  position_btn_new($height,$width,$top,$left,$fontsize){
+    height: $height;
+    width: $width;
+    top: $top;
+    left: $left;  /*R6*/
+    font-size: $fontsize;
+}

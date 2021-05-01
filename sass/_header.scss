@@ -13,7 +13,34 @@
         transform: translate(50%, -50%);
         position: absolute;
         top: 50%;
-        left: 5%;
-        font-size: 2rem;
+
+        @include zz {
+            left: -0.5%;
+            font-size: 1.5rem;
+        }
+        @include zm {
+            left: 3%;
+            font-size: 1.6rem;
+        }
+        @include xm {
+            left: 3%;
+            font-size: 2rem;
+        }
+        @include sm {
+            left: 5%;
+            font-size: 2rem;
+        }
+        @include md {
+            left: 5%;
+            font-size: 2rem;
+        }
+        @include lg {
+            left: 5%;
+            font-size: 2rem;
+        }
+        @include xl {
+            left: 5%;
+            font-size: 2rem;
+        }
     }
 }
