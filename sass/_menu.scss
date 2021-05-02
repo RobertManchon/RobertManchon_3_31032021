@@ -53,11 +53,11 @@
     }
     /* menu choices*/
     &__choices{
-        /* R20 */
-        
+
         background-color: $color-gray--light;
         position: relative;
         z-index: 1;
+
         @include xl {    /* Window width >=1200*/
             display: flex;
             align-content: space-between;
@@ -86,7 +86,15 @@
             }
         }
         &-card {
-
+            /* R20 */
+            @for $i from 1 through 3 {
+                &--#{$i} {
+                    animation-name: fade-in;
+                    animation-duration: 750ms;
+                    animation-fill-mode: both;
+                    animation-delay: 500ms * $i;
+                }
+            }
 
             background-color: $color-white;
             margin: 1.5rem 0rem;
