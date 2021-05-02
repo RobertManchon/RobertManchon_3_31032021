@@ -94,7 +94,7 @@
     }
     // Window width >= 992px
     @include lg {
-        padding: -1rem 0 1rem 0;
+        padding: 0rem 0 1rem 0;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -130,23 +130,23 @@
     @include xm { /*Window width >=576*/
         width: 80%;
         margin: 1rem 1.4rem 2rem 1rem; /*-1.2*/
-        //max-width: 1000px;
+
     } 
 
     @include sm {    /*Window width >=576*/
         width: 80%;
         margin:  1rem 1.4rem 2rem 1rem; /*-1.1*/
-        //max-width: 1000px;
+
     }    
     @include md {    /* Window width >=768*/
         width: 80%;
         margin: 1rem 1.4rem 2rem 1rem;/*R1 first value  -1 TODO à modifier*/
-        //max-width: 1000px;
+
     }    
     @include lg {    /*Window width >=992*/
         width: 80%;
         margin: 3rem 1.4rem 2rem 1rem;
-        //max-width: 1000px;
+
     }
     
     @include xl {    /* Window width >=1200*/

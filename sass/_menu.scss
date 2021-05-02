@@ -18,7 +18,7 @@
             z-index: 0;
         }
     }
-    /* title section */ 
+    /* title section */
     &__title{
         background-color: $color-gray--light;
         position: relative;
@@ -28,8 +28,8 @@
         padding: 1rem 0;
         @include xl {
             margin-top: -30rem;
-        }    
-        
+        }
+
         &-icon {
             width:40px;
             position: absolute;
@@ -38,7 +38,7 @@
             color: white;
             margin: 0 2rem;
             font-size: 2rem;
-           -webkit-text-stroke: 1px black;
+            -webkit-text-stroke: 1px black;
             cursor: pointer;
             transition: all 500ms;
             -webkit-transition: all 500ms;
@@ -53,6 +53,8 @@
     }
     /* menu choices*/
     &__choices{
+        /* R20 */
+        
         background-color: $color-gray--light;
         position: relative;
         z-index: 1;
@@ -65,45 +67,39 @@
         @include lg {
             margin-top: -4rem; /*R2*/
             z-index:auto;
-        }    
+        }
         &-title {
             display:inline-block;
-            
-                p {
+
+            p {
                 text-transform: uppercase;
                 padding-bottom:10px;
                 position: relative;
-                    &:before {
-                        content: "";
-                        position: absolute;
-                        width: 60%;
-                        bottom: 0;
-                        left: 0;
-                        border-bottom: 2px solid $color-tertiary;
-                    }
-                }
-        }
-        &-card {
-            @for $i from 1 through 3 {
-                &--#{$i} {
-                    animation-name: fade-in; 
-                    animation-duration: 750ms;
-                    animation-fill-mode: both;
-                    animation-delay: 500ms * $i;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 60%;
+                    bottom: 0;
+                    left: 0;
+                    border-bottom: 2px solid $color-tertiary;
                 }
             }
+        }
+        &-card {
+
+
             background-color: $color-white;
             margin: 1.5rem 0rem;
-                
-                @include lg {
-                    margin: 2.5rem 0rem;
-                }
-                
-                @include xl {    /* Window width >=1200*/
 
-                    margin: 1rem 0.5rem 1rem 0;
-                    padding: 0;
-                }    
+            @include lg {
+                margin: 2.5rem 0rem;
+            }
+
+            @include xl {    /* Window width >=1200*/
+
+                margin: 1rem 0.5rem 1rem 0;
+                padding: 0;
+            }
 
             &-meal {
                 display: flex;
@@ -123,11 +119,11 @@
                         padding: 1.5rem 2rem;
                     }
 
-                    @include xl {    
+                    @include xl {
                         width: 100%;
                         font-size: 1rem;
-                    }   
-                    
+                    }
+
                     width: 100%;
                     min-width: 0;
                     &-item {
@@ -146,7 +142,7 @@
                             white-space: nowrap;  /* R17 */
                             overflow: hidden;
                             text-overflow: ellipsis;
-                            
+
                         }
                         &-price p{
                             font-weight: 700;
@@ -160,14 +156,14 @@
                     width: 0rem;
                     overflow: hidden;
                     &-container{
-                    height: 100%;
-                    width: 100%;
-                    overflow: hidden;
-                    background-color: $color-tertiary;
-                    color: $color-white;
-                    border-radius: 0px 20px 20px 0px;
-                    position: relative;
-                    display: block;
+                        height: 100%;
+                        width: 100%;
+                        overflow: hidden;
+                        background-color: $color-tertiary;
+                        color: $color-white;
+                        border-radius: 0px 20px 20px 0px;
+                        position: relative;
+                        display: block;
                         i {
                             position: absolute;
                             font-size: 2rem;
@@ -175,10 +171,10 @@
                             left: 50%;
                             transform: translate(50%,-50%) rotate(90deg);
                         }
-                    
+
+                    }
                 }
-            }
-                    
+
                 &:hover > &--select {
                     width: 6rem;
                     transform: scaleX(1);
@@ -188,8 +184,8 @@
                     }
                 }
 
-                
-            } 
+
+            }
         }
     }
     /* Order */
